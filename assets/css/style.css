@@ -319,7 +319,7 @@ h3 {
 }
 
 .services {
-  padding: 1.1% 0;
+  padding: 1.1% 0 0;
 }
 
 .services a {
@@ -343,7 +343,7 @@ h3 {
 }
 
 .services .service {
-  padding: 5% 0;
+  padding: 5% 0 4.3%;
 }
 
 .flex-container {
@@ -351,4 +351,38 @@ h3 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.latest-work {
+  padding-top: 6.7%;
+  background-color: #EFEFEF;
+}
+
+.latest-work .wrapper {
+  width: 100%;
+}
+
+.latest-work h3 + a {
+  padding: 2% 0 4.5%;
+  display: block;
+  text-align: center;
+  color: #424B52;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+}
+
+.latest-work .portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.latest-work .portfolio .portfolio__slide {
+  width: 25%;
 }

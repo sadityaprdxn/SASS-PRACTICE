@@ -1,0 +1,23 @@
+.latest-work {
+	padding-top: 6.7%;
+	background-color: #EFEFEF;
+
+	.wrapper { width: 100%; } 
+
+	h3 + a {
+		padding: 2% 0 4.5%;
+		display: block;
+		text-align: center;
+		@include textcharacteristics($secondaryColor,14px,600,uppercase);
+		letter-spacing: -1px;
+		word-spacing: -1px;
+	}
+
+	.portfolio {
+		@include flex(wrap,row,space-between,center,center);
+
+		.portfolio__slide{
+			width: 25%;
+		}
+	}
+}
