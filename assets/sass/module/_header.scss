@@ -9,13 +9,19 @@ header {
 			a {
 				padding: 26px 18.2px 22px;
 				@include textcharacteristics($secondaryColor,13px,600,uppercase);
+				@include transition(0.3s);
+
+				&:hover {
+					color: #FFF;
+					background-color: $primaryColor;
+				}
 			}
 		}
 	}
 }
 
 .social-icon {
-	margin-bottom: 6px;
+	margin-bottom: 9px;
 
 	li {
 

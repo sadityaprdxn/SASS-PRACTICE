@@ -1,0 +1,56 @@
+.banner {
+
+	.wrapper {
+		width: 100%;
+
+		.slider {
+			@include flex(nowrap,row,flex-start,center,center);
+			overflow: hidden;
+
+			@at-root #{&}__slide {
+				min-width: 100%;
+				position: relative;
+
+				div {
+					width: 50%;
+					padding: 1.5%;
+					@include boxsizing();
+					@include position(absolute,1,60%,auto,auto,50%);
+					@include textcharacteristics(#FFF,18px,500,uppercase);
+					letter-spacing: 0.5px;
+					background-color: $primaryColor;
+
+					span {
+						display: block;
+						padding-top: 0.3%;
+						word-spacing: 3px;
+						line-height: 23px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.read-more {
+	padding: 1% 1.5% 0.95%;
+	@include position(absolute,1,83.5%,auto,auto,50%);
+	@include textcharacteristics($primaryColor,12px,700,uppercase);
+	letter-spacing: -0.5px;
+	background-color: #FFF;
+	@include transition(0.3s);
+
+	&::after {
+		padding: 0 0 0 8px;
+		@include  pseudoElement('\f105',16px,$primaryColor);
+		@include transform(translateY(-5%));
+		@include transition(0.3s);
+	}
+
+	&:hover {
+		color: #FFF;
+		background-color: $primaryColor;
+
+		&::after { color: #FFF;	}
+	}
+}
