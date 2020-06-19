@@ -20,6 +20,16 @@
 					letter-spacing: 0.5px;
 					background-color: $primaryColor;
 
+					@include breakpoint('ipad') {
+						position: static;
+						width: 100%;
+					}
+
+					@include breakpoint('phone') { 
+						padding: 5% 3%;
+						font-size: 13px;
+					}
+
 					span {
 						display: block;
 						padding-top: 0.3%;
@@ -52,5 +62,10 @@
 		background-color: $primaryColor;
 
 		&::after { color: #FFF;	}
+	}
+
+	@include breakpoint('ipad') {
+		@include position(absolute,1,50%,auto,auto,50%);
+		@include transform(translateY(-50%) translateX(-50%));
 	}
 }

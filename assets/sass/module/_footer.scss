@@ -6,8 +6,12 @@ footer {
 	a ,
 	p {
 		@include textcharacteristics(rgba(255,255,255,0.7),16px,500);
-		-webkit-transition: all .3s ease;
-		transition: all .3s ease;
+		@include transition(0.3s);
+
+		&:hover {	
+			color: #FFF;
+			text-decoration: underline;
+		}
 	}
 
 	p { 
@@ -36,6 +40,10 @@ footer {
 			text-align: left;
 			padding-bottom: 7%;
 		}
+
+		
+		@include breakpoint('ipad') { width: 50%; }
+		@include breakpoint('phone') { width: 100%; }
 	}
 
 	.information {

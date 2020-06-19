@@ -1,4 +1,7 @@
 header {
+	width: 100%;
+	@include position(sticky,2,0,auto,auto,0);
+	background-color: #FFF;
 
 	.wrapper {
 		width: 95.5%;
@@ -11,15 +14,69 @@ header {
 				@include textcharacteristics($secondaryColor,13px,600,uppercase);
 				@include transition(0.3s);
 
+				@include breakpoint('ipad'){
+					padding: 26px 10px 22px;
+					font-size: 10px;
+				}
+
 				&:hover {
 					color: #FFF;
 					background-color: $primaryColor;
 				}
 			}
+
+			@include breakpoint('phone'){
+				width: 100%;
+				height: 100vh;
+				padding: 5%;
+				@include boxsizing;
+				@include position(absolute,1,0,auto,auto,0);
+				background-color: $primaryColor;
+				clip-path: circle( 0% at 100% 0);
+				@include transition(0.3s);
+
+				li {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	@include breakpoint('phone') {
+		padding: 3% 0;
+
+		nav:hover {
+
+			.navbar {
+			clip-path: circle( 110% at 100% 0);
+			}
+
+			.hamburger {
+
+				span:first-child {
+					background-color: #FFF;
+					-webkit-transform: translateY(7px) rotate(135deg);
+					transform: translateY(8px) rotate(135deg);
+				}
+		
+				span:last-child {
+					background-color: #FFF;
+					-webkit-transform: translateY(7px) rotate(135deg);
+					transform: translateY(-8px) rotate(-135deg);
+				}
+		
+				span:nth-child(2) {
+					background-color: #FFF;
+					-webkit-transform: scale(0);
+					transform: scale(0);
+				}	
+			}
 		}
 	}
 }
 
+//SOCIAL ICON STYLING
 .social-icon {
 	margin-bottom: 9px;
 
@@ -27,6 +84,7 @@ header {
 
 		a {
 			@extend %hide-text;
+			@include transition(0.3s);
 
 			&::before {
 				width: 20px;
@@ -51,10 +109,36 @@ header {
 			&.instagram::before {
 				@include  pseudoElement('\f16d',16px,$primaryColor);
 			}
+
+			&:hover::before {	color: $secondaryColor;	}
 		}
 	}
+
+	@include breakpoint('phone'){ display: none; }
 }
 
+//HAMBURGER STYLING
 .hamburger {
-    display: none;
+	display: none;
+	width: 40px;
+	padding: 8px;
+	position: relative;
+	z-index: 5;
+	box-sizing: border-box;
+	cursor: pointer;
+
+	span {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: $primaryColor;
+    text-indent: -9999px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+	}
+
+	span:last-child { margin: 0; }
+
+	@include breakpoint('phone'){ display: block; }
 }

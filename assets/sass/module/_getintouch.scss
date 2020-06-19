@@ -69,6 +69,8 @@
 			& + span { display: none; }
 		}
 	}
+	
+	@include breakpoint('phone') { width: 100%; }
 }
 
 
@@ -125,4 +127,6 @@
 			color: $primaryColor;
 		}
 	}
+
+	@include breakpoint('phone') { width: 100%; }
 }

@@ -9,5 +9,7 @@
 	li {
 		width: 23%;
 		padding-bottom: 2.8%;
+
+		@include breakpoint('phone') { width: 48%; }
 	}
 }

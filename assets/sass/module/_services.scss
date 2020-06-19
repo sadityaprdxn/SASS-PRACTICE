@@ -3,6 +3,11 @@
 
 	a {
 		display: block;
+		@include transition(0.3s);
+
+		&:hover {
+			box-shadow: 15px 15px 15px rgba(0,0,0,0.1);
+		}
 	}
 	
 	span {
@@ -16,6 +21,10 @@
 	li {
 		width: 17%;
 		padding-bottom: 2.2%;
+
+		@include breakpoint('phone') { width: 48%; }
+
+		@include breakpoint('iphone') { width: 100%; }
 	}
 
 	.service {

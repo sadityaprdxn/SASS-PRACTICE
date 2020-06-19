@@ -11,6 +11,9 @@
 		@include textcharacteristics($secondaryColor,14px,600,uppercase);
 		letter-spacing: -1px;
 		word-spacing: -1px;
+		@include transition(0.3s);
+
+		&:hover { color: $primaryColor;}
 	}
 
 	.portfolio {
@@ -18,6 +21,8 @@
 
 		.portfolio__slide{
 			width: 25%;
+	
+			@include breakpoint('phone') { width: 50%; }
 		}
 	}
 }
