@@ -386,3 +386,18 @@ h3 {
 .latest-work .portfolio .portfolio__slide {
   width: 25%;
 }
+
+.work-with {
+  padding: 7% 0 6%;
+  background-color: #F46239;
+}
+
+.work-with h3 {
+  padding-bottom: 4%;
+  color: #FFF;
+}
+
+.work-with li {
+  width: 18%;
+  padding-bottom: 1%;
+}
