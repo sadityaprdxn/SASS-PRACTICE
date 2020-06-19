@@ -1,0 +1,28 @@
+.services {
+	padding: 1.1% 0;
+
+	a {
+		display: block;
+	}
+	
+	span {
+		padding: 14% 0 0;
+		display: block;
+		@include textcharacteristics($secondaryColor,16px,700,uppercase);
+		letter-spacing: 0.5px;
+		text-align: center;
+	}
+
+	li {
+		width: 17%;
+		padding-bottom: 2.2%;
+	}
+
+	.service {
+		padding: 5% 0;
+	}
+}
+
+.flex-container {
+	@include flex(wrap,row,space-between);
+}

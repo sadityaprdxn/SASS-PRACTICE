@@ -1,0 +1,15 @@
+.help {
+	padding: 6% 0;
+
+	p {
+		padding: 4.5% 0;
+		@include textcharacteristics($secondaryColor,15px,500,normal,30px);
+		word-spacing: -2px;
+		text-align: center;
+	}
+}
+	
+h3 {
+	@include textcharacteristics($secondaryColor,23px,600,uppercase);
+	text-align: center;
+}

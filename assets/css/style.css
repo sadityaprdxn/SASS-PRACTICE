@@ -294,3 +294,61 @@ header .wrapper .navbar a:hover {
 .read-more:hover::after {
   color: #FFF;
 }
+
+.help {
+  padding: 6% 0;
+}
+
+.help p {
+  padding: 4.5% 0;
+  color: #424B52;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: normal;
+  word-spacing: -2px;
+  text-align: center;
+}
+
+h3 {
+  color: #424B52;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services {
+  padding: 1.1% 0;
+}
+
+.services a {
+  display: block;
+}
+
+.services span {
+  padding: 14% 0 0;
+  display: block;
+  color: #424B52;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.services li {
+  width: 17%;
+  padding-bottom: 2.2%;
+}
+
+.services .service {
+  padding: 5% 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
