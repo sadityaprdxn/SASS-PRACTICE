@@ -1,0 +1,81 @@
+footer {
+	padding: 2% 0 2.5%;
+	background: #3C3B3B;
+	color: #ededed;
+
+	a ,
+	p {
+		@include textcharacteristics(rgba(255,255,255,0.7),16px,500);
+		-webkit-transition: all .3s ease;
+		transition: all .3s ease;
+	}
+
+	p { 
+		padding-top: 3.5%;
+		text-align: center;
+	}
+
+	h5 {
+		padding-top: 64px;
+		margin-bottom: 40px;
+		@include textcharacteristics(#FFF,25px,600,capitalize);
+		letter-spacing: -1px;
+	}
+
+	.company-info {
+		@include flex(wrap,row,flex-start);
+	}
+
+	.contact {
+		width: 21%;
+		margin-right: 13.2%;
+		text-transform: uppercase;
+
+		li {
+			display: block;
+			text-align: left;
+			padding-bottom: 7%;
+		}
+	}
+
+	.information {
+
+		li {
+			display: block;
+			text-align: left;
+			padding-bottom: 7%;
+		}
+	}
+
+	.footer-social-icons {
+		padding-top: 5.6%;
+		text-align: center;
+
+		a {
+			padding: 0 5px;
+			@extend %hide-text;
+
+			&::before {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&.facebook::before {
+				@include  pseudoElement('\f082',33px,#FFF);
+			}
+
+			&.twitter::before {
+				@include  pseudoElement('\f099',33px,#FFF);
+			}
+
+			&.linked-in::before {
+				@include  pseudoElement('\f0e1',33px,#FFF);
+			}
+
+			&.instagram::before {
+				@include  pseudoElement('\f16d',33px,#FFF);
+			}
+		}
+	}
+}

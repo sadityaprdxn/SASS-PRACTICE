@@ -132,7 +132,7 @@ li {
   margin: 0 auto;
 }
 
-.social-icon li a {
+.social-icon li a, footer .footer-social-icons a {
   display: inline-block;
   text-indent: -9999px;
 }
@@ -567,4 +567,109 @@ h3 {
 .right-pannel button:hover {
   background-color: #FFF;
   color: #F46239;
+}
+
+footer {
+  padding: 2% 0 2.5%;
+  background: #3C3B3B;
+  color: #ededed;
+}
+
+footer a,
+footer p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+
+footer p {
+  padding-top: 3.5%;
+  text-align: center;
+}
+
+footer h5 {
+  padding-top: 64px;
+  margin-bottom: 40px;
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+}
+
+footer .company-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+footer .contact {
+  width: 21%;
+  margin-right: 13.2%;
+  text-transform: uppercase;
+}
+
+footer .contact li {
+  display: block;
+  text-align: left;
+  padding-bottom: 7%;
+}
+
+footer .information li {
+  display: block;
+  text-align: left;
+  padding-bottom: 7%;
+}
+
+footer .footer-social-icons {
+  padding-top: 5.6%;
+  text-align: center;
+}
+
+footer .footer-social-icons a {
+  padding: 0 5px;
+}
+
+footer .footer-social-icons a::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-social-icons a.facebook::before {
+  content: "";
+  float: right;
+  color: #FFF;
+  font-size: 33px;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+}
+
+footer .footer-social-icons a.twitter::before {
+  content: "";
+  float: right;
+  color: #FFF;
+  font-size: 33px;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+}
+
+footer .footer-social-icons a.linked-in::before {
+  content: "";
+  float: right;
+  color: #FFF;
+  font-size: 33px;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+}
+
+footer .footer-social-icons a.instagram::before {
+  content: "";
+  float: right;
+  color: #FFF;
+  font-size: 33px;
+  font-family: 'fontAwesome';
+  text-indent: 0;
 }
