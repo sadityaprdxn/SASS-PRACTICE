@@ -1,0 +1,54 @@
+header {
+
+	.wrapper {
+		width: 95.5%;
+		@include flex(wrap,row,space-between,center,center);
+		
+		.navbar {
+
+			a {
+				padding: 26px 18.2px 22px;
+				@include textcharacteristics($secondaryColor,13px,600,uppercase);
+			}
+		}
+	}
+}
+
+.social-icon {
+	margin-bottom: 6px;
+
+	li {
+
+		a {
+			@extend %hide-text;
+
+			&::before {
+				width: 20px;
+				height: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&.facebook::before {
+				@include  pseudoElement('\f082',16px,$primaryColor);
+			}
+
+			&.twitter::before {
+				@include  pseudoElement('\f099',16px,$primaryColor);
+			}
+
+			&.linked-in::before {
+				@include  pseudoElement('\f0e1',16px,$primaryColor);
+			}
+
+			&.instagram::before {
+				@include  pseudoElement('\f16d',16px,$primaryColor);
+			}
+		}
+	}
+}
+
+.hamburger {
+    display: none;
+}

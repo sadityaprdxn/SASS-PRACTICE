@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url("../fonts/Brusher.ttf");
   font-family: 'brusher';
@@ -129,4 +130,79 @@ li {
   max-width: 1360px;
   width: 84%;
   margin: 0 auto;
+}
+
+.social-icon li a {
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+header .wrapper {
+  width: 95.5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+header .wrapper .navbar a {
+  padding: 26px 18.2px 22px;
+  color: #424B52;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.social-icon {
+  margin-bottom: 6px;
+}
+
+.social-icon li a::before {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon li a.facebook::before {
+  content: "";
+  float: right;
+  color: #F46239;
+  font-size: 16px;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+}
+
+.social-icon li a.twitter::before {
+  content: "";
+  float: right;
+  color: #F46239;
+  font-size: 16px;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+}
+
+.social-icon li a.linked-in::before {
+  content: "";
+  float: right;
+  color: #F46239;
+  font-size: 16px;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+}
+
+.social-icon li a.instagram::before {
+  content: "";
+  float: right;
+  color: #F46239;
+  font-size: 16px;
+  font-family: 'fontAwesome';
+  text-indent: 0;
+}
+
+.hamburger {
+  display: none;
 }
